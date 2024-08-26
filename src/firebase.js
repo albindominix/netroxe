@@ -7,12 +7,12 @@ import { getFirestore } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB-wpl2Tv_cE9UunlnGv2gCOUOmsl8IPFU",
-  authDomain: "netroxe-7d305.firebaseapp.com",
-  projectId: "netroxe-7d305",
-  storageBucket: "netroxe-7d305.appspot.com",
-  messagingSenderId: "935800692088",
-  appId: "1:935800692088:web:ae015f02401a303b917c8d"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
